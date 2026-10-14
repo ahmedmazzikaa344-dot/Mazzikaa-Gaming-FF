@@ -78,7 +78,7 @@ const initialProducts=[
 {id:'d2200',image:'assets/diamonds-2180.png',name:'2200 جوهرة',category:'diamonds',price:1015,art:'2200',color:'blue',desc:'باقة 2200 جوهرة',type:'جواهر',offer:false},
 {id:'weekly-sale',image:'assets/weekly-discount.png',name:'العضوية الأسبوعية المخفضة',category:'membership',price:30,oldPrice:40,art:'W',color:'',desc:'عرض توفير على العضوية الأسبوعية',type:'عضوية',offer:true,save:true},
 {id:'weekly-joker',image:'assets/weekly.png',name:'العضوية الأسبوعية Joker',category:'membership',price:100,art:'W',color:'',desc:'العضوية الأسبوعية',type:'عضوية',offer:true},
-{id:'monthly',image:'assets/monthly.png',name:'العضوية الشهرية',category:'membership',price:400,art:'M',color:'gold',desc:'العضوية الشهرية',type:'عضوية',offer:true},
+{id:'monthly',image:'monthly.png',name:'العضوية الشهرية',category:'membership',price:400,art:'M',color:'gold',desc:'العضوية الشهرية',type:'عضوية',offer:true},
 {id:'booyah',image:'assets/booyah.png',name:'Booyah Pass',category:'pass',price:65,art:'B',color:'brown',desc:'بطاقة Booyah Pass',type:'بطاقة',offer:true}
 ];
 let products=JSON.parse(localStorage.getItem('mazzikaaProducts')||'null')||initialProducts.map(p=>({...p}));
