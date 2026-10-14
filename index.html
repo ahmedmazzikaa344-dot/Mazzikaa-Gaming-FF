@@ -69,17 +69,17 @@ footer{background:#171923;color:#fff;padding:30px 18px}.footer-inner{max-width:1
 <div class="toast" id="toast"></div>
 <script>
 const initialProducts=[
-{id:'d50',image:'assets/diamonds.png',name:'50 جوهرة',category:'diamonds',price:25,art:'50',color:'blue',desc:'باقة 50 جوهرة',type:'جواهر',offer:false},
-{id:'d100',image:'assets/diamonds.png',name:'100 جوهرة',category:'diamonds',price:55,art:'100',color:'blue',desc:'باقة 100 جوهرة',type:'جواهر',offer:false},
-{id:'d210',image:'assets/diamonds-310.png',name:'210 جوهرة',category:'diamonds',price:105,art:'210',color:'blue',desc:'باقة 210 جوهرة',type:'جواهر',offer:false},
-{id:'d310',image:'assets/diamonds-310.png',name:'310 جوهرة',category:'diamonds',price:155,art:'310',color:'blue',desc:'باقة 310 جوهرة',type:'جواهر',offer:false},
-{id:'d520',image:'assets/diamonds-520.png',name:'520 جوهرة',category:'diamonds',price:260,art:'520',color:'blue',desc:'باقة 520 جوهرة',type:'جواهر',offer:false},
-{id:'d1060',image:'assets/diamonds-1060.png',name:'1060 جوهرة',category:'diamonds',price:510,art:'1060',color:'blue',desc:'باقة 1060 جوهرة',type:'جواهر',offer:false},
-{id:'d2200',image:'assets/diamonds-2180.png',name:'2200 جوهرة',category:'diamonds',price:1015,art:'2200',color:'blue',desc:'باقة 2200 جوهرة',type:'جواهر',offer:false},
-{id:'weekly-sale',image:'assets/weekly-discount.png',name:'العضوية الأسبوعية المخفضة',category:'membership',price:30,oldPrice:40,art:'W',color:'',desc:'عرض توفير على العضوية الأسبوعية',type:'عضوية',offer:true,save:true},
-{id:'weekly-joker',image:'assets/weekly.png',name:'العضوية الأسبوعية Joker',category:'membership',price:100,art:'W',color:'',desc:'العضوية الأسبوعية',type:'عضوية',offer:true},
+{id:'d50',image:'diamonds.png',name:'50 جوهرة',category:'diamonds',price:25,art:'50',color:'blue',desc:'باقة 50 جوهرة',type:'جواهر',offer:false},
+{id:'d100',image:'diamonds.png',name:'100 جوهرة',category:'diamonds',price:55,art:'100',color:'blue',desc:'باقة 100 جوهرة',type:'جواهر',offer:false},
+{id:'d210',image:'diamonds-310.png',name:'210 جوهرة',category:'diamonds',price:105,art:'210',color:'blue',desc:'باقة 210 جوهرة',type:'جواهر',offer:false},
+{id:'d310',image:'diamonds-310.png',name:'310 جوهرة',category:'diamonds',price:155,art:'310',color:'blue',desc:'باقة 310 جوهرة',type:'جواهر',offer:false},
+{id:'d520',image:'diamonds-520.png',name:'520 جوهرة',category:'diamonds',price:260,art:'520',color:'blue',desc:'باقة 520 جوهرة',type:'جواهر',offer:false},
+{id:'d1060',image:'diamonds-1060.png',name:'1060 جوهرة',category:'diamonds',price:510,art:'1060',color:'blue',desc:'باقة 1060 جوهرة',type:'جواهر',offer:false},
+{id:'d2200',image:'diamonds-2180.png',name:'2200 جوهرة',category:'diamonds',price:1015,art:'2200',color:'blue',desc:'باقة 2200 جوهرة',type:'جواهر',offer:false},
+{id:'weekly-sale',image:'weekly-discount.png',name:'العضوية الأسبوعية المخفضة',category:'membership',price:30,oldPrice:40,art:'W',color:'',desc:'عرض توفير على العضوية الأسبوعية',type:'عضوية',offer:true,save:true},
+{id:'weekly-joker',image:'weekly.png',name:'العضوية الأسبوعية Joker',category:'membership',price:100,art:'W',color:'',desc:'العضوية الأسبوعية',type:'عضوية',offer:true},
 {id:'monthly',image:'monthly.png',name:'العضوية الشهرية',category:'membership',price:400,art:'M',color:'gold',desc:'العضوية الشهرية',type:'عضوية',offer:true},
-{id:'booyah',image:'assets/booyah.png',name:'Booyah Pass',category:'pass',price:65,art:'B',color:'brown',desc:'بطاقة Booyah Pass',type:'بطاقة',offer:true}
+{id:'booyah',image:'booyah.png',name:'BooyahBass Pass',category:'pass',price:65,art:'B',color:'brown',desc:'بطاقة Booyah Pass',type:'بطاقة',offer:true}
 ];
 let products=JSON.parse(localStorage.getItem('mazzikaaProducts')||'null')||initialProducts.map(p=>({...p}));
 let activeFilter='all', searchText='';
